@@ -1,0 +1,15 @@
+default menu.c32
+prompt 0
+timeout 30
+ONTIMEOUT centos
+
+
+menu title ############ PXE BOOT MENU ############
+
+
+label centos
+menu label ^1) INSTALL CENTOS PRECONFIGURED
+	MENU DEFAULT
+	kernel images/vmlinuz
+	append initrd=images/initrd.img ks=http://192.168.50.1/anaconda-ks.cfg
+

@@ -1,0 +1,11 @@
+$TTL 1D
+@ 	IN SOA 	dns1.testbed.net root.dns1.testbed.net. (
+					0 	; serial
+					1D 	; refresh
+					1H 	; retry
+					1W 	; expire
+					3H ) 	; minimum
+
+
+	IN NS 	dns1.testbed.net.
+	IN PTR 	dns1.testbed.net.
